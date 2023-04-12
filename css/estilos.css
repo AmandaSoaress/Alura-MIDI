@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Cinzel:wght@400;700;800&family=Emilys+Candy&family=Inter&family=Noto+Serif:wght@400;700&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,300;0,500;1,700&family=Rubik+Pixels&family=Secular+One&family=Shantell+Sans:wght@300;400;500;600&family=Spectral:ital,wght@0,400;0,500;0,700;1,200&family=Tilt+Prism&display=swap');
+:root {
+  --Preto: #000000;
+  --azul: #2ea1c5;
+  --azul-escura: #303baf;
+  --branca: #fff;
+  --luz: #030405;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(45deg, #87fff6 0%,#67c1ba 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Beth Ellen', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Emilys Candy', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Pixels', cursive;
+font-family: 'Secular One', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Spectral', serif;
+font-family: 'Tilt Prism', cursive;
+font-style:oblique;
+font-size:35px;
+text-decoration: underline wavy blue;
+text-shadow: 1px 1px 8px yellow;
+ 2px 2px  1px green;
+  color: var(--branca);
+  margin-bottom: 25px;
+  word-spacing:10px;
+  line-height:1.1;
+
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--Preto);
+  color: var(--azul);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--azul);
+  border: 4px solid  var(--azul);
+  box-shadow: 3px 3px 0 var(--azul-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--azul-escura) inset, 1px 1px 10px var(--luz);
+}
