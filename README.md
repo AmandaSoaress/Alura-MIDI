@@ -4,7 +4,7 @@ O Alura Midi é um instrumento musical de interface digital, onde a cada botão 
 
 <ul>
 <li>JavaScript para Web.</li>
-<li>Páginas dinamicas.</li>
+<li>Páginas dinâmicas.</li>
 <li>Controle da reprodução do som.</li>
 </ul>
 
