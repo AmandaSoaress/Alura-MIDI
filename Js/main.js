@@ -1,15 +1,24 @@
 const ListaDeAudio = document.querySelectorAll("audio");
 
 //som tecla dinâmica..............................................
+function tocaSom(index){
+    const som = ListaDeAudio[index];
+console.log(som)
 
+    if (som != undefined ){
+         som.play();
+    }
+ else {
+        console.log('Elemento não encontrado ou seletor inválido.');
+    } 
+        
+}
 const ListaDeTeclas = document.querySelectorAll('.tecla');
 for (let index = 0; index < ListaDeTeclas.length; index++) {
     const botao = ListaDeTeclas[index];
     botao.addEventListener('click', function (evento) {
-        const som = ListaDeAudio[index];
-        som.play();
-        //console.log(som)
-
+ 
+         tocaSom(index)
     });
     botao.onkeydown = function (evento) {
 
